@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Form builder="jigloo" ide="eclipse" laf="com.jgoodies.looks.plastic.Plastic3DLookAndFeel" style="Swing" version="4.0.0">
+<ExtraComponents>
+		<Component class="javax.swing.JMenuBar" name="jMenuBar1">
+			<Constraints>
+				<Constraint tabTitle="jMenuBar1"/>
+				<LayoutConstraint/>
+			</Constraints>
+			<Properties>
+			</Properties>
+			<SubComponents>
+				<Component class="javax.swing.JMenu" name="jMenu3">
+					<Constraints>
+						<Constraint tabTitle="jMenu3"/>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+						<Property name="text" type="String" value="Datei"/>
+					</Properties>
+					<SubComponents>
+						<Component class="javax.swing.JMenuItem" name="exitMenuItem">
+							<Constraints>
+								<Constraint tabTitle="exitMenuItem"/>
+								<LayoutConstraint/>
+							</Constraints>
+							<Properties>
+								<Property name="text" type="String" value="Exit"/>
+							</Properties>
+						</Component>
+					</SubComponents>
+				</Component>
+				<Component class="javax.swing.JMenu" name="jMenu5">
+					<Constraints>
+						<Constraint tabTitle="jMenu5"/>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+						<Property name="text" type="String" value="Hilfe"/>
+					</Properties>
+					<SubComponents>
+						<Component class="javax.swing.JMenuItem" name="helpMenuItem">
+							<Constraints>
+								<Constraint tabTitle="helpMenuItem"/>
+								<LayoutConstraint/>
+							</Constraints>
+							<Events>
+								<EventHandler event="actionPerformed" handler="helpMenuItemActionPerformedhandler method" listener="java.awt.event.ActionListener"/>
+							</Events>
+							<Properties>
+								<Property name="text" type="String" value="Anleitung ..."/>
+							</Properties>
+						</Component>
+						<Component class="javax.swing.JMenuItem" name="ivHomepage">
+							<Constraints>
+								<Constraint tabTitle="ivHomepage"/>
+								<LayoutConstraint/>
+							</Constraints>
+							<Events>
+								<EventHandler event="actionPerformed" handler="ivHomepageActionPerformedhandler method" listener="java.awt.event.ActionListener"/>
+							</Events>
+							<Properties>
+								<Property name="text" type="String" value="Homepage www.wenzlaff.de ..."/>
+							</Properties>
+						</Component>
+					</SubComponents>
+				</Component>
+			</SubComponents>
+		</Component></ExtraComponents>
+<NonVisualComponents>
+		<Component class="UNKNOWN" name="Non-visual components" style="0">
+			<Constraints>
+				<LayoutConstraint/>
+			</Constraints>
+			<SubComponents>
+				<Component class="java.lang.Boolean" name="boolean_IL" style="0">
+					<Constraints>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+					</Properties>
+				</Component>
+				<Component class="java.lang.Boolean" name="boolean_IL1" style="0">
+					<Constraints>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+					</Properties>
+				</Component>
+				<Component class="java.lang.Boolean" name="boolean_IL1" style="0">
+					<Constraints>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+					</Properties>
+				</Component>
+				<Component class="java.lang.Boolean" name="boolean_IL2" style="0">
+					<Constraints>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+					</Properties>
+				</Component>
+				<Component class="de.wenzlaff.DictionaryHandler" name="ivDic" style="0">
+					<Constraints>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+					</Properties>
+				</Component>
+				<Component class="java.lang.String" name="%5.lvEingegebenesPasswort" style="0">
+					<Constraints>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+					</Properties>
+				</Component>
+				<Component class="java.lang.String" name="%5.lvEingegebenesPasswort" style="0">
+					<Constraints>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+					</Properties>
+				</Component>
+				<Component class="java.lang.String" name="%5.lvEingegebenesPasswort" style="0">
+					<Constraints>
+						<LayoutConstraint/>
+					</Constraints>
+					<Properties>
+					</Properties>
+				</Component>
+			</SubComponents>
+		</Component></NonVisualComponents>
+	<Component class="javax.swing.JFrame" name="this">
+		<Constraints>
+			<Constraint tabTitle="this"/>
+			<LayoutConstraint/>
+		</Constraints>
+		<Layout class="GridBag">
+			<Property name="columnWidths" type="IntegerArray">
+			<IntegerArray value="[7, 7, 7, 7]"/>
+		</Property>
+			<Property name="rowHeights" type="IntegerArray">
+			<IntegerArray value="[7, 7, 7, 7]"/>
+		</Property>
+			<Property name="columnWeights" type="DoubleArray">
+			<DoubleArray value="[0.1, 0.1, 0.1, 0.1]"/>
+		</Property>
+			<Property name="rowWeights" type="DoubleArray">
+			<DoubleArray value="[0.1, 0.1, 0.1, 0.1]"/>
+		</Property>
+			<Property name="columns" type="int" value="0"/>
+			<Property name="rows" type="int" value="0"/>
+		</Layout>
+		<Properties>
+			<Property name="layout"/>
+			<Property name="title" type="String" value="Passwort Qualität - TWQualPass"/>
+			<Property name="size" type="Dimension">
+				<Dimension value="[406, 442]"/>
+			</Property>
+		</Properties>
+		<SubComponents>
+			<Component class="javax.swing.JProgressBar" name="ivFortschritt">
+				<Constraints>
+					<Constraint tabTitle="ivFortschritt"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="1"/>
+						<Property name="gridy" type="int" value="3"/>
+						<Property name="gridwidth" type="int" value="2"/>
+						<Property name="fill" type="int" value="2"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="value" type="int" value="0"/>
+					<Property name="maximum" type="int" value="100"/>
+					<Property name="stringPainted" type="boolean" value="true"/>
+					<Property name="background" type="Color">
+						<Color blue="c0" green="c0" red="c0"/>
+					</Property>
+					<Property name="foreground" type="Color">
+						<Color blue="0" green="0" red="ff"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JTextField" name="ivEingabe">
+				<Constraints>
+					<Constraint tabTitle="ivEingabe"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="1"/>
+						<Property name="gridwidth" type="int" value="4"/>
+						<Property name="fill" type="int" value="2"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 20, 10, 20]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Events>
+					<EventHandler event="keyReleased" handler="getPassworthandler method" listener="java.awt.event.KeyListener"/>
+				</Events>
+				<Properties>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JLabel" name="ivQualitaet">
+				<Constraints>
+					<Constraint tabTitle="ivQualitaet"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="3"/>
+						<Property name="anchor" type="int" value="17"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[0, 20, 0, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="Qualität des Passwortes:"/>
+				</Properties>
+				<SubComponents>
+					<Component class="java.awt.Component" name="ivQualitaet.labelFor">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="javax.swing.JLabel" name="ivPasswortLabel">
+				<Constraints>
+					<Constraint tabTitle="ivPasswortLabel"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="0"/>
+						<Property name="anchor" type="int" value="17"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 20, 0, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="Eingabe des Passwort"/>
+				</Properties>
+				<SubComponents>
+					<Component class="java.awt.Component" name="ivPasswortLabel.labelFor">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="javax.swing.JLabel" name="ivLaenge">
+				<Constraints>
+					<Constraint tabTitle="ivLaenge"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="4"/>
+						<Property name="anchor" type="int" value="17"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 20, 10, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Events>
+				</Events>
+				<Properties>
+					<Property name="text" type="String" value="Länge:"/>
+				</Properties>
+				<SubComponents>
+					<Component class="java.awt.Component" name="ivLaenge.labelFor">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="javax.swing.JLabel" name="ivSonderz">
+				<Constraints>
+					<Constraint tabTitle="ivSonderz"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="5"/>
+						<Property name="anchor" type="int" value="17"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 20, 10, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="Sonderzeichen vorhanden:"/>
+				</Properties>
+				<SubComponents>
+					<Component class="java.awt.Component" name="ivSonderz.labelFor">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="javax.swing.JTextField" name="ivPasswortLaenge">
+				<Constraints>
+					<Constraint tabTitle="ivPasswortLaenge"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="1"/>
+						<Property name="gridy" type="int" value="4"/>
+						<Property name="fill" type="int" value="2"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="columns" type="int" value="3"/>
+					<Property name="text" type="String" value="int"/>
+					<Property name="editable" type="boolean" value="false"/>
+					<Property name="background" type="Color">
+						<Color blue="0" green="0" red="ff"/>
+					</Property>
+					<Property name="size" type="Dimension">
+						<Dimension value="[3, 21]"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JTextField" name="ivPasswortSonderzeichen">
+				<Constraints>
+					<Constraint tabTitle="ivPasswortSonderzeichen"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="1"/>
+						<Property name="gridy" type="int" value="5"/>
+						<Property name="fill" type="int" value="2"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="nein"/>
+					<Property name="editable" type="boolean" value="false"/>
+					<Property name="background" type="Color">
+						<Color blue="0" green="0" red="ff"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JLabel" name="ivWorterbuch">
+				<Constraints>
+					<Constraint tabTitle="ivWorterbuch"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="6"/>
+						<Property name="anchor" type="int" value="17"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 20, 10, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="Im Wörterbuch vorhanden:"/>
+				</Properties>
+				<SubComponents>
+					<Component class="java.awt.Component" name="ivWorterbuch.labelFor">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="javax.swing.JTextField" name="ivImWorterbuch">
+				<Constraints>
+					<Constraint tabTitle="ivImWorterbuch"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="1"/>
+						<Property name="gridy" type="int" value="6"/>
+						<Property name="fill" type="int" value="2"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="ja"/>
+					<Property name="editable" type="boolean" value="false"/>
+					<Property name="background" type="Color">
+						<Color blue="0" green="0" red="ff"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JLabel" name="ivGrossbuchstabe">
+				<Constraints>
+					<Constraint tabTitle="ivGrossbuchstabe"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="7"/>
+						<Property name="anchor" type="int" value="17"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 20, 10, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="Grossbuchstabe vorhanden:"/>
+				</Properties>
+				<SubComponents>
+					<Component class="java.awt.Component" name="ivGrossbuchstabe.labelFor">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="javax.swing.JTextField" name="ivGrossKleinBuchstaben">
+				<Constraints>
+					<Constraint tabTitle="ivGrossKleinBuchstaben"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="1"/>
+						<Property name="gridy" type="int" value="7"/>
+						<Property name="fill" type="int" value="2"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="nein"/>
+					<Property name="editable" type="boolean" value="false"/>
+					<Property name="background" type="Color">
+						<Color blue="0" green="0" red="ff"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JLabel" name="ivZahlVorhanden">
+				<Constraints>
+					<Constraint tabTitle="ivZahlVorhanden"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="9"/>
+						<Property name="fill" type="int" value="2"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 20, 10, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="Zahl vorhanden:"/>
+				</Properties>
+				<SubComponents>
+					<Component class="java.awt.Component" name="ivZahlVorhanden.labelFor">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="javax.swing.JTextField" name="ivZahlTextField">
+				<Constraints>
+					<Constraint tabTitle="ivZahlTextField"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="1"/>
+						<Property name="gridy" type="int" value="9"/>
+						<Property name="fill" type="int" value="2"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 0, 10, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="nein"/>
+					<Property name="editable" type="boolean" value="false"/>
+					<Property name="background" type="Color">
+						<Color blue="0" green="0" red="ff"/>
+					</Property>
+				</Properties>
+			</Component>
+			<Component class="javax.swing.JLabel" name="ivKleinBuchstabe">
+				<Constraints>
+					<Constraint tabTitle="ivKleinBuchstabe"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="0"/>
+						<Property name="gridy" type="int" value="8"/>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="Kleinbuchstabe vorhanden:"/>
+				</Properties>
+				<SubComponents>
+					<Component class="java.awt.Component" name="ivKleinBuchstabe.labelFor">
+						<Constraints>
+							<LayoutConstraint/>
+						</Constraints>
+					</Component>
+				</SubComponents>
+			</Component>
+			<Component class="javax.swing.JTextField" name="ivKleinBuchstabeField">
+				<Constraints>
+					<Constraint tabTitle="ivKleinBuchstabeField"/>
+					<LayoutConstraint class="java.awt.GridBagConstraints">
+						<Property name="gridx" type="int" value="1"/>
+						<Property name="gridy" type="int" value="8"/>
+						<Property name="fill" type="int" value="2"/>
+						<Property name="insets" type="Insets">
+						<Insets value="[10, 0, 10, 0]"/>
+					</Property>
+					</LayoutConstraint>
+				</Constraints>
+				<Properties>
+					<Property name="text" type="String" value="nein"/>
+					<Property name="editable" type="boolean" value="false"/>
+					<Property name="background" type="Color">
+						<Color blue="0" green="0" red="ff"/>
+					</Property>
+				</Properties>
+			</Component>
+		</SubComponents>
+	</Component>
+</Form>
