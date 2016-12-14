@@ -1,4 +1,3 @@
-/target/
 
 *.class
 
@@ -37,5 +36,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
 /.classpath
 /.settings/
+/target/
+/.DS_Store
