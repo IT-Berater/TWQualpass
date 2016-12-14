@@ -9,4 +9,12 @@
 
 Ein Programm zum überprüfen der Passwort Qualität.
 
-![](/bilder/twquallpass.png)
+Starten der Java Klasse
+
+de.wenzlaff.Gui
+
+es startet diese Dialog
+
+![](/bilder/twqualpass.png)
+
+Details siehe ![hier](http://wenzlaff.de/twqualpass.html).
