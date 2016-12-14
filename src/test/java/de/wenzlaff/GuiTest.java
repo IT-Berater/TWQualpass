@@ -6,7 +6,7 @@ public class GuiTest {
 
 	@Test
 	public void testGui() {
-		Gui.main(null);
+
 	}
 
 }
