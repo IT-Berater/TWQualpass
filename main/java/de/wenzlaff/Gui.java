@@ -74,6 +74,7 @@ public final class Gui extends javax.swing.JFrame {
 		ivDic = new DictionaryHandler();
 
 		SwingUtilities.invokeLater(new Runnable() {
+			@Override
 			public void run() {
 				Gui inst = new Gui();
 				inst.setLocationRelativeTo(null);
@@ -98,21 +99,18 @@ public final class Gui extends javax.swing.JFrame {
 			this.setTitle("Passwort Qualität - TWQualPass");
 			{
 				ivFortschritt = new JProgressBar(0, 100);
-				getContentPane().add(
-						ivFortschritt,
-						new GridBagConstraints(1, 3, 2, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
+				getContentPane().add(ivFortschritt,
+						new GridBagConstraints(1, 3, 2, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
 				ivFortschritt.setStringPainted(true);
 				ivFortschritt.setBackground(new java.awt.Color(192, 192, 192));
 
 			}
 			{
 				ivEingabe = new JTextField();
-				getContentPane().add(
-						ivEingabe,
-						new GridBagConstraints(0, 1, 4, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(10, 20, 10, 20), 0, 0));
+				getContentPane().add(ivEingabe,
+						new GridBagConstraints(0, 1, 4, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(10, 20, 10, 20), 0, 0));
 				ivEingabe.addKeyListener(new KeyAdapter() {
+					@Override
 					public void keyReleased(KeyEvent evt) {
 						getPasswort(evt);
 					}
@@ -121,42 +119,29 @@ public final class Gui extends javax.swing.JFrame {
 			}
 			{
 				ivQualitaet = new JLabel();
-				getContentPane().add(
-						ivQualitaet,
-						new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE,
-								new Insets(0, 20, 0, 0), 0, 0));
+				getContentPane().add(ivQualitaet, new GridBagConstraints(0, 3, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(0, 20, 0, 0), 0, 0));
 				ivQualitaet.setText("Qualität des Passwortes:");
 			}
 			{
 				ivPasswortLabel = new JLabel();
-				getContentPane().add(
-						ivPasswortLabel,
-						new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE,
-								new Insets(10, 20, 0, 0), 0, 0));
+				getContentPane().add(ivPasswortLabel,
+						new GridBagConstraints(0, 0, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(10, 20, 0, 0), 0, 0));
 				ivPasswortLabel.setText("Eingabe des Passwort");
 			}
 			{
 				ivLaenge = new JLabel();
-				getContentPane().add(
-						ivLaenge,
-						new GridBagConstraints(0, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE,
-								new Insets(10, 20, 10, 0), 0, 0));
+				getContentPane().add(ivLaenge, new GridBagConstraints(0, 4, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(10, 20, 10, 0), 0, 0));
 				ivLaenge.setText("Länge:");
 			}
 			{
 				ivSonderz = new JLabel();
-				getContentPane().add(
-						ivSonderz,
-						new GridBagConstraints(0, 5, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE,
-								new Insets(10, 20, 10, 0), 0, 0));
+				getContentPane().add(ivSonderz, new GridBagConstraints(0, 5, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(10, 20, 10, 0), 0, 0));
 				ivSonderz.setText("Sonderzeichen vorhanden:");
 			}
 			{
 				ivPasswortLaenge = new JTextField();
-				getContentPane().add(
-						ivPasswortLaenge,
-						new GridBagConstraints(1, 4, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
+				getContentPane().add(ivPasswortLaenge,
+						new GridBagConstraints(1, 4, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
 				ivPasswortLaenge.setSize(3, 21);
 				ivPasswortLaenge.setColumns(3);
 				ivPasswortLaenge.setEditable(false);
@@ -164,78 +149,59 @@ public final class Gui extends javax.swing.JFrame {
 			}
 			{
 				ivPasswortSonderzeichen = new JTextField();
-				getContentPane().add(
-						ivPasswortSonderzeichen,
-						new GridBagConstraints(1, 5, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
+				getContentPane().add(ivPasswortSonderzeichen,
+						new GridBagConstraints(1, 5, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
 				ivPasswortSonderzeichen.setEditable(false);
 				ivPasswortSonderzeichen.setText("nein");
 			}
 			{
 				ivWorterbuch = new JLabel();
-				getContentPane().add(
-						ivWorterbuch,
-						new GridBagConstraints(0, 6, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE,
-								new Insets(10, 20, 10, 0), 0, 0));
+				getContentPane().add(ivWorterbuch, new GridBagConstraints(0, 6, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(10, 20, 10, 0), 0, 0));
 				ivWorterbuch.setText("Im Wörterbuch vorhanden:");
 			}
 			{
 				ivImWorterbuch = new JTextField();
-				getContentPane().add(
-						ivImWorterbuch,
-						new GridBagConstraints(1, 6, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
+				getContentPane().add(ivImWorterbuch,
+						new GridBagConstraints(1, 6, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
 				ivImWorterbuch.setEditable(false);
 				ivImWorterbuch.setText("nein");
 			}
 			{
 				ivGrossbuchstabe = new JLabel();
-				getContentPane().add(
-						ivGrossbuchstabe,
-						new GridBagConstraints(0, 7, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE,
-								new Insets(10, 20, 10, 0), 0, 0));
+				getContentPane().add(ivGrossbuchstabe,
+						new GridBagConstraints(0, 7, 1, 1, 0.0, 0.0, GridBagConstraints.WEST, GridBagConstraints.NONE, new Insets(10, 20, 10, 0), 0, 0));
 				ivGrossbuchstabe.setText("Grossbuchstabe vorhanden:");
 			}
 			{
 				ivGrossKleinBuchstaben = new JTextField();
-				getContentPane().add(
-						ivGrossKleinBuchstaben,
-						new GridBagConstraints(1, 7, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
+				getContentPane().add(ivGrossKleinBuchstaben,
+						new GridBagConstraints(1, 7, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(0, 0, 0, 0), 0, 0));
 				ivGrossKleinBuchstaben.setText("nein");
 				ivGrossKleinBuchstaben.setEditable(false);
 			}
 			{
 				ivZahlVorhanden = new JLabel();
-				getContentPane().add(
-						ivZahlVorhanden,
-						new GridBagConstraints(0, 9, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(10, 20, 10, 0), 0, 0));
+				getContentPane().add(ivZahlVorhanden,
+						new GridBagConstraints(0, 9, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(10, 20, 10, 0), 0, 0));
 				ivZahlVorhanden.setText("Zahl vorhanden:");
 			}
 			{
 				ivZahlTextField = new JTextField();
-				getContentPane().add(
-						ivZahlTextField,
-						new GridBagConstraints(1, 9, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(10, 0, 10, 0), 0, 0));
+				getContentPane().add(ivZahlTextField,
+						new GridBagConstraints(1, 9, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(10, 0, 10, 0), 0, 0));
 				ivZahlTextField.setText("nein");
 				ivZahlTextField.setEditable(false);
 			}
 			{
 				ivKleinBuchstabe = new JLabel();
-				getContentPane().add(
-						ivKleinBuchstabe,
-						new GridBagConstraints(0, 8, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.NONE, new Insets(0, 0, 0, 0), 0, 0));
+				getContentPane().add(ivKleinBuchstabe,
+						new GridBagConstraints(0, 8, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.NONE, new Insets(0, 0, 0, 0), 0, 0));
 				ivKleinBuchstabe.setText("Kleinbuchstabe vorhanden:");
 			}
 			{
 				ivKleinBuchstabeField = new JTextField();
-				getContentPane().add(
-						ivKleinBuchstabeField,
-						new GridBagConstraints(1, 8, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER,
-								GridBagConstraints.HORIZONTAL, new Insets(10, 0, 10, 0), 0, 0));
+				getContentPane().add(ivKleinBuchstabeField,
+						new GridBagConstraints(1, 8, 1, 1, 0.0, 0.0, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL, new Insets(10, 0, 10, 0), 0, 0));
 				ivKleinBuchstabeField.setText("nein");
 				ivKleinBuchstabeField.setEditable(false);
 			}
@@ -252,6 +218,12 @@ public final class Gui extends javax.swing.JFrame {
 						exitMenuItem = new JMenuItem();
 						jMenu3.add(exitMenuItem);
 						exitMenuItem.setText("Exit");
+						exitMenuItem.addActionListener(new ActionListener() {
+							@Override
+							public void actionPerformed(ActionEvent e) {
+								System.exit(0);
+							}
+						});
 					}
 				}
 				{
@@ -263,6 +235,7 @@ public final class Gui extends javax.swing.JFrame {
 						jMenu5.add(helpMenuItem);
 						helpMenuItem.setText("Anleitung ...");
 						helpMenuItem.addActionListener(new ActionListener() {
+							@Override
 							public void actionPerformed(ActionEvent evt) {
 								helpMenuItemActionPerformed(evt);
 							}
@@ -273,6 +246,7 @@ public final class Gui extends javax.swing.JFrame {
 						jMenu5.add(ivHomepage);
 						ivHomepage.setText("Homepage www.wenzlaff.de ...");
 						ivHomepage.addActionListener(new ActionListener() {
+							@Override
 							public void actionPerformed(ActionEvent evt) {
 								ivHomepageActionPerformed(evt);
 							}
