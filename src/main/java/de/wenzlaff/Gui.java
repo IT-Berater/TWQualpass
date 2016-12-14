@@ -36,7 +36,6 @@ import javax.swing.SwingUtilities;
 /**
  * 
  * @author Thomas Wenzlaff
- * 
  */
 public final class Gui extends javax.swing.JFrame {
 

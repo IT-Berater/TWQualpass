@@ -1,6 +1,10 @@
 eclipse.preferences.version=1
 encoding//etc/README_de_DE.txt=ISO-8859-1
 encoding//etc/license.txt=ISO-8859-1
-encoding//main/java/de/wenzlaff/DictionaryHandler.java=ISO-8859-1
-encoding//main/java/de/wenzlaff/Gui.java=ISO-8859-1
-encoding/<project>=UTF-8
+encoding//src/main/java=ISO-8859-1
+encoding//src/main/java/de/wenzlaff/DictionaryHandler.java=ISO-8859-1
+encoding//src/main/java/de/wenzlaff/Gui.java=ISO-8859-1
+encoding//src/main/resources=ISO-8859-1
+encoding//src/test/java=ISO-8859-1
+encoding//src/test/java/de/wenzlaff/GuiTest.java=ISO-8859-1
+encoding/<project>=ISO-8859-1
