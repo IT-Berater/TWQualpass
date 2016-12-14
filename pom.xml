@@ -52,7 +52,6 @@
 		<url>https://github.com/IT-Berater/TWQualpass</url>
 	</scm>
 	
-
 	<build>
 		<finalName>twqualpass</finalName>
 		<plugins>
