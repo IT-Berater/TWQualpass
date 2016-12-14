@@ -47,9 +47,9 @@
 	</developers>
 	
 	<scm>
-		<connection>scm:git:git@github.com:IT-Berater/de.wenzlaff.twqualpass.git</connection>
-		<developerConnection>scm:git:git@github.com:IT-Berater/de.wenzlaff.twqualpass.git</developerConnection>
-		<url>https://github.com/IT-Berater/de.wenzlaff.twqualpass</url>
+		<connection>scm:git:git@github.com:IT-Berater/twqualpass.git</connection>
+		<developerConnection>scm:git:git@github.com:IT-Berater/twqualpass.git</developerConnection>
+		<url>https://github.com/IT-Berater/twqualpass</url>
 	</scm>
 	
 
