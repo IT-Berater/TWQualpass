@@ -17,4 +17,4 @@ es startet diese Dialog
 
 ![](/bilder/twqualpass.png)
 
-Details siehe [hier](http://www.wenzlaff.de/twqualpass.html).
+Details siehe [hier](http://www.wenzlaff.info).
